@@ -5,21 +5,19 @@ import { Label ,TextInput,Button } from "flowbite-react";
 export default function SignUp() {
   return (
     <div className="min-h-screen mt-10 ">
-      <div className="flex p-20 max-w-3xl mx-auto flex-col md:flex-row md:items-center md:p-10 md:gap-20">
-        <div  className="flex-1">
+      <div className="flex p-8 max-w-3xl mx-auto flex-col md:flex-row md:items-center md:p-10 md:gap-20">
+        <div  className=" flex-1  sm:p-10 sm:h-96 ">
             <span className="font-bold bg-clip-padding  text-white px-4 py-2 bg-black rounded-lg text-4xl ">
               100x Blogs
             </span>
-          <p className="text-base font-semibold mt-5">
-            Join 100xdev! <br />
-            Learn and grow with fellow developers. Sign up now to
-            unlock exclusive resources and boost your skills!
-            <br />
-            Let’s build together!
+          <p className="text-base font-semibold mt-10">
+         
+Connect with fellow developers for exclusive resources and skill growth. <br /><br />Sign up now. <br />
+Let’s build together!
           </p>
         </div>
 
-        <div className="mt-10 flex-1 border p-4 rounded-md">
+        <div className="mt-10 flex-1 border p-10 rounded-md shadow-md">
           <form className="flex flex-col gap-3">
             <div>
               <Label value='Enter your Username' />
