@@ -1,41 +1,51 @@
 import React from "react";
 import { Link } from "react-router-dom";
-import { Label ,TextInput,Button } from "flowbite-react";
 
 export default function SignUp() {
   return (
-    <div className="min-h-screen mt-10 ">
-      <div className="flex p-8 max-w-3xl mx-auto flex-col md:flex-row md:items-center md:p-10 md:gap-20">
-        <div  className=" flex-1  sm:p-10 sm:h-96 ">
-            <span className="font-bold bg-clip-padding  text-white px-4 py-2 bg-black rounded-lg text-4xl ">
-              100x Blogs
-            </span>
-          <p className="text-base font-semibold mt-10">
-         
-Connect with fellow developers for exclusive resources and skill growth. <br /><br />Sign up now. <br />
-Let’s build together!
-          </p>
-        </div>
+    <div className="min-h-screen ">
+      <div className="flex p-8 max-w-4xl  mx-auto flex-col md:flex-row md:items-center md:p-10 md:gap-20">
+        
 
-        <div className="mt-10 flex-1 border p-10 rounded-md shadow-md">
+        <div className="mt-5 flex-1  p-10 rounded-md shadow-xl bg-white border-2  border-gray-500">
           <form className="flex flex-col gap-3">
             <div>
-              <Label value='Enter your Username' />
-              <TextInput  className="gray-800" type='text' placeholder='Username' id='username'/>
+              <label htmlFor="username" className="block text-gray-700 font-semibold mb-2">Enter your Username</label>
+              <input
+                type="text"
+                id="username"
+                placeholder="Username"
+                className="w-full px-4 py-2 border rounded-lg focus:outline-none focus:ring-2 focus:ring-black"
+              />
             </div>
             <div>
-              <Label value='Enter your Email' />
-              <TextInput type='email' placeholder='mail@example.com' id='email'/>
+              <label htmlFor="email" className="block text-gray-700 font-semibold mb-2">Enter your Email</label>
+              <input
+                type="email"
+                id="email"
+                placeholder="mail@example.com"
+                className="w-full px-4 py-2 border rounded-lg focus:outline-none focus:ring-2 focus:ring-black"
+              />
             </div>
             <div>
-              <Label value='Password' />
-              <TextInput type='text' placeholder='Password' id='password'/>
+              <label htmlFor="password" className="block text-gray-700 font-semibold mb-2">Password</label>
+              <input
+                type="password"
+                id="password"
+                placeholder="Password"
+                className="w-full px-4 py-2 border rounded-lg focus:outline-none focus:ring-2 focus:ring-black"
+              />
             </div>
-            <Button type="submit" class="text-white bg-black hover:bg-gray-300 hover:text-black focus:outline-none focus:ring-4 focus:ring-gray-300 flex items-center justify-center font-medium rounded-lg text-sm sm:text-lg px-2 py-2 sm:px-1 sm:py-1 me-2 mb-1 mt-1 w-full sm:w-50 dark:bg-gray-800 dark:hover:bg-gray-700 dark:focus:ring-gray-700 dark:border-gray-700">Sign Up</Button>
+            <button
+              type="submit"
+              className="text-white bg-black hover:bg-slate-400 hover:text-black focus:outline-none focus:ring-4 focus:ring-gray-300 font-medium rounded-lg text-sm sm:text-lg px-4 py-2 mt-4 w-full"
+            >
+              Sign Up
+            </button>
           </form>
           <div className="flex gap-2 mt-5 text-base">
             <span>Already registered?</span>
-              <Link to='/sign-in' className='text-red-500 underline font-bold'> Sign In</Link>
+            <Link to="/sign-in" className="text-red-500 underline font-bold"> Sign In</Link>
           </div>
         </div>
       </div>
